@@ -1,21 +1,493 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
+
+
+header {
+    background-color: #513a8f;
+    padding: 1em 0;
 }
 
-html, body {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  background-color: #fff;
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 main {
-  margin: auto;
-  width: 50%;
-  padding: 20px;
+    padding: 2em;
+    text-align: center;
 }
 
-main > h1 {
-  text-align: center;
-  font-size: 3.5em;
+footer {
+    background-color: #5622aa;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    margin: 0.5em;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label, form input, form textarea, form button {
+    width: 80%;
+    margin: 0.5em 0;
+}
+
+form input, form textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ff1493;
+}
+
+
+header {
+    background-color: #ff69b4;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    padding: 1em;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.grid-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.grid-item p {
+    padding: 1em;
+    margin: 0;
+}
+/* Existing CSS styles remain unchanged */
+
+.details {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.details > div {
+    margin-bottom: 5px;
+}
+
+
+header {
+    background-color: #ff69b4;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.service-item, .team-member, .review {
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #ff69b4;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+
+header {
+    background-color: #ff69b4;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+}
+
+.grid-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item img, .team-member img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1em;
+}
+
+footer {
+    background-color: #ff69b4;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+
+header {
+    background-color: rgba(255, 105, 180, 0.8); /* Transparent pink */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white */
+    border-radius: 10px;
+    margin: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item img, .team-member img, .grid-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1em;
+}
+
+footer {
+    background-color: rgba(255, 105, 180, 0.8); /* Transparent pink */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2em 5em;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact-info {
+    text-align: right;
+    line-height: 0.1;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: 'https://in.pinterest.com/pin/803751864746567765/';
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    
+}
+
+header {
+    background-color: rgba(255, 105, 180, 0.8); /* Transparent pink */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white */
+    border-radius: 10px;
+    margin: 2em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background-color: rgba(255, 105, 180, 0.8); /* Transparent pink */
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+    backdrop-filter: blur(5px);
+}
+
+.contact-info {
+    text-align: center;
+    line-height: 1.5;
+}
+/* styles.css */
+
+/* Basic reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px; /* Adjust gap as needed */
+    padding: 10px;
+}
+
+/* Grid items */
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* Heading and paragraph text */
+.grid-item h2, .grid-item p {
+    margin: 10px 0; /* Adjust margin as needed */
+}
+
+/* Images */
+.grid-item img {
+    width: 100%;
+    height: 200px; /* Set a fixed height to ensure consistency */
+    object-fit: cover; /* Ensures the image covers the entire area of the grid item */
+    border-radius: 10px; /* Optional: Add some border radius for a better look */
+}
+
+/* Optional: Responsive Adjustments */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 400px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+}
+/* styles.css */
+
+/* Basic reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Grid items */
+.grid-item {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Image styling */
+.grid-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-rendering: -webkit-optimize-contrast; /* Safari */
+    image-rendering: crisp-edges; /* Modern browsers */
+    -ms-interpolation-mode: nearest-neighbor; /* IE */
 }
