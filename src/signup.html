@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women's Travel Agency - Sign In / Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+
+    <div id="signupContainer" class="form-container">
+      <h2>Sign Up</h2>
+      <form id="signupForm" onsubmit="validateSignupForm(event)">
+        <div class="input-group">
+          <label for="signup-username">Username</label>
+          <input type="text" id="signup-username" name="signup-username" required>
+        </div>
+        <div class="input-group">
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" name="signup-password" required>
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+      <p id="signup-success-msg" class="success-msg"></p>
+      <p id="signup-error-msg" class="error-msg"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
