@@ -1,7 +1,5 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
-
-name: Build and deploy ASP.Net Core app to Azure Web App - tourismFinalWebApp
             - name: Setup Node.js environment
   uses: actions/setup-node@v4.0.2
   with:
@@ -26,6 +24,9 @@ name: Build and deploy ASP.Net Core app to Azure Web App - tourismFinalWebApp
     # Used to specify the path to a dependency file: package-lock.json, yarn.lock, etc. Supports wildcards or a list of file names for caching multiple dependencies.
     cache-dependency-path: # optional
           
+
+name: Build and deploy ASP.Net Core app to Azure Web App - tourismFinalWebApp
+            - 
 on:
   push:
     branches:
